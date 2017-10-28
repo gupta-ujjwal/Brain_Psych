@@ -1,0 +1,70 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <View
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:alpha="0.4"
+        android:background="#000000" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Welcome, Yasir Ameen"
+        android:gravity="center_horizontal"
+        android:id="@+id/txt_success_name"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="YasirAmeen92@gmail.com"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:gravity="center_horizontal"
+        android:id="@+id/txt_success_email"
+        android:layout_below="@+id/txt_success_name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="132dp"
+        android:text="Start session"
+        android:textColor="#000"
+        tools:textColor="#000000"
+        android:layout_below="@+id/txt_success_email"
+        android:layout_alignLeft="@+id/search"
+        android:layout_alignStart="@+id/search" />
+
+    <Button
+        android:id="@+id/search"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="63dp"
+        android:text="search for professional help "
+        android:layout_below="@+id/start"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="22dp"
+        android:text="Log out" />
+
+</RelativeLayout>
